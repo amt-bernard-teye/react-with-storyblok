@@ -1,0 +1,21 @@
+:root {
+  --color-primary: #49A9EB;
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  color: var(--bs-secondary);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 900;
+  color: var(--bs-dark);
+}
+
+.text-main {
+  color: var(--color-primary);
+}
+
+.bg-main {background-color: var(--color-primary);}
+.text-gray-200 { color: var(--bs-gray-300); }
