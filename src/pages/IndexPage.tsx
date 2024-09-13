@@ -1,12 +1,12 @@
-import { StoryblokComponent, useStoryblok } from "@storyblok/react";
+import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function IndexPage() {
-  const slug = "home";
-  const story = useStoryblok(slug, {version: "draft"});
+  const navigate = useNavigate();
 
-  if (!story || !story.content) {
-    return <p>Loading...</p>;
-  }
+  useEffect(() => {
+    navigate("/blogs");
+  }, [navigate]);
 
-  return <StoryblokComponent blok={story.content} />
+  return <p>Loading...</p>
 }
